@@ -1,0 +1,97 @@
+:root {
+    --text-color: #fff;
+    --btn-bg-color: rgb(92 43 153);
+    --btn-bg-hover-color: rgb(111, 60, 172);
+}
+
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+    background: linear-gradient(#7b0e7b, #ff09ca);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    margin-top: 15rem;
+    max-width: 70vw;
+    text-shadow: 2px 2px 5px #020102;
+}
+
+h2 {
+    margin: 2rem;
+    font-weight: 200;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Button*/
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 2rem;
+    border: 2px solid var(--btn-bg-color);
+    border-radius: 10px;
+    min-width: 10rem;
+    min-height: 10rem;
+    margin: 2rem;
+    cursor: pointer;
+    background-color: var(--btn-bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s, transform 0.2s ease-in;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn:hover {
+    background-color: var(--btn-bg-hover-color);
+}
+
+.btn:focus {
+    outline: 1px solid var(--btn-bg-color);
+    background-color: var(--btn-bg-hover-color);
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    h1,
+    .buttons {
+        margin-top: 5rem;
+    }
+}
