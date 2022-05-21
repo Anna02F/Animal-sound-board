@@ -1,4 +1,4 @@
-const sounds = ["rooster", "hen", "cow", "horse", "sheep", "goat"];
+const sounds = ["rooster", "hen", "cow", "horse", "sheep", "goat", "pig"];
 const buttonsContainer = document.querySelector("#buttons");
 
 const fragment = document.createDocumentFragment();
